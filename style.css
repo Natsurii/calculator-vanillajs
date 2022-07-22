@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+html {
+    font-size: 61.5%;
+}
+
+body{
+    background: #FCF6B1;
+    font-size: 1.8rem;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chasis{
+    display: flex;
+    flex-direction: column;
+    background: #2D1E2F;
+    height: 70%;
+    width: 35em;
+    border-radius: 25px;
+    padding: 2em;
+    gap: 2em;
+}
+
+.screen {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #C9C9EE;
+    border-radius: 25px;
+    padding: 1em;
+    font-size: 3.6rem;
+}
+
+.touchpad {
+    display: flex;
+    flex-basis: 60%;
+    padding: 1em;
+    justify-content: center;
+}
+.numpad{
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+}
+.numpad > *{
+    height: 10rem;
+    width: 10rem;
+    font-size: 2.4rem;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #C9C9EE;
+}
+
+.operations {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operations > * {
+    height: 10rem;
+    width: 10rem;
+    font-size: 2.4rem;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #C9C9EE;
+}
+#equal {
+    width: 20rem;
+}
